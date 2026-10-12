@@ -24,7 +24,10 @@
   --f-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   color-scheme: dark;
 }
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { background: var(--bg); color: var(--ink); }
+body { margin: 0; }
 body { font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
 .wrap { max-width: 1180px; margin: 0 auto; padding: 20px 16px 40px; display: grid; gap: 16px; }
 header { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: flex-end; justify-content: space-between; }
